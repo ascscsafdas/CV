@@ -1,0 +1,37 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Test files
+test_*.py
+*_test.py
+
+# Generated images and results (temporary)
+seq_gtan_test_result.png
+南矿*.png
+南矿*.xlsx
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Model files (if large)
+*.pth
+*.pt
+*.model

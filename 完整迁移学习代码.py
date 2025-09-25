@@ -16,8 +16,10 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import warnings
 warnings.filterwarnings('ignore')
 
-# 设置中文字体
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
+# 设置中文字体 - 兼容不同环境
+import matplotlib
+matplotlib.use('Agg')  # 使用非交互式后端
+plt.rcParams['font.family'] = ['DejaVu Sans', 'Arial', 'sans-serif']  # 使用系统可用字体
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 class SeqGTAN(nn.Module):
